@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="regn-form">
+      <h2>Registration form</h2>
+      <form>
+        <label>Username</label></br>
+        <input type="text" id="textinput" placeholder="enter username"  /></br>
+        <label>Password</label></br>
+        <input type="password" id="password" placeholder="Enter password"  /></br>
+        <button type="button" id="login">Login</button>
+      </form>
+    </div>
+    <script>
+        
+        let array=[];
+
+      let data= document.getElementById("login")
+      
+      data.addEventListener("click", () => {
+       alert("login Succesfully");
+       let textinput=document.getElementById("textinput").value
+       let password=document.getElementById("password").value
+       let objData = { user: textinput, entry: password };
+       array.push(objData)
+       console.log(array)
+       console.log(textinput)
+       document.getElementById("textinput").value = " ";
+       document.getElementById("password").value = " ";
+
+      })
+      
+    </script>
+  </body>
+</html>

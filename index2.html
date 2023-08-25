@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #clicks {
+        background-color: rgb(106, 11, 196);
+        width: 150px;
+        height: 50px;
+        border: none;
+        font-size: medium;
+        border-radius: 15px;
+        color: white;
+      }
+      #clicks:hover {
+        background-color: crimson;
+      }
+    </style>
+    <h2>Interactive Button</h2>
+    <button id="clicks" onclick="Click()" name="click" type="button">
+      Click Me
+    </button>
+  </body>
+  <script>
+    var text = document.querySelector("button");
+    function Click() {
+      text.innerText = text.innerText === "Click Me" ? "Clicked" : "Click Me";
+      text.style.backgroundColor = "green";
+    }
+  </script>
+</html>

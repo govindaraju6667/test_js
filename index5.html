@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>document</title>
+  </head>
+  <body>
+    <style>
+      #clickButton {
+        background-color: burlywood;
+        border: none;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+      }
+    </style>
+    <div class="click-container">
+      <h2>Click Counter</h2>
+      <button id="clickButton">Click Me</button>
+      <p>Click count: <span id="clickCount">0</span></p>
+    </div>
+    <script>
+      const clickButton = document.getElementById("clickButton");
+      const clickCountElement = document.getElementById("clickCount");
+
+      let clickCount = 0;
+
+      clickButton.addEventListener("click", () => {
+        clickCount++;
+        clickCountElement.textContent = clickCount;
+      });
+    </script>
+  </body>
+</html>

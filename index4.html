@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: antiquewhite;
+        margin: auto;
+        width: auto;
+        justify-content: center;
+        display: flex;
+        margin-left: 200px;
+      }
+      #pic {
+        width: 450px;
+        height: 450px;
+        cursor: pointer;
+      }
+      #pic:hover {
+        opacity: 0.7;
+      }
+
+      #pic:hover img {
+        transform: scale(1.1);
+        background-color: burlywood;
+      }
+      #gallery {
+        display: flex;
+        column-gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+    <div class="gallery">
+      <h2>Hover Effect</h2>
+      <img
+        id="pic"
+        src="https://cdn.dribbble.com/userupload/3114640/file/original-9e59ccfec607153e9a9255de1d69e5d8.png?resize=450x338&vertical=center"
+      />
+      <img
+        id="pic"
+        src="https://cdn.dribbble.com/users/329207/screenshots/16002999/media/0316692c95628c06c6966ec7bd8bd515.jpg?resize=450x338&vertical=center"
+      />
+      <img
+        id="pic"
+        src="https://cdn.dribbble.com/userupload/6724816/file/original-76d065b48b4398d40c221c7053413d51.jpg?crop=42x35-2067x1554&resize=450x338&vertical=center"
+      />
+      <img
+        id="pic"
+        src="https://cdn.dribbble.com/userupload/3954953/file/original-5ac10626e4250fed86ee30b9b055e09b.jpg?resize=450x338&vertical=center"
+      />
+    </div>
+  </body>
+</html>
